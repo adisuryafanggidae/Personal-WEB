@@ -1,0 +1,27 @@
+Start
+     Input Golongan, Jam_Lembur
+     IF Golongan = 'A' THEN
+     Gaji_Pokok = 5000000
+     ELSE IF Golongan = 'B' THEN
+     Gaji_Pokok = 6500000
+     ELSE IF Golongan = 'C' THEN
+     Gaji_Pokok = 9500000
+     END IF
+
+     IF Jam_Lembur = 1 THEN
+     Gaji_Lembur = 0.30 * Gaji_Pokok
+     ELSE IF Jam_Lembur = 2 THEN
+     Gaji_Lembur = 0.32 * Gaji_Pokok
+     ELSE IF Jam_Lembur = 3 THEN
+     Gaji_Lembur = 0.34 * Gaji_Pokok
+     ELSE IF Jam_Lembur = 4 THEN
+     Gaji_Lembur = 0.36 * Gaji_Pokok
+     ELSE IF Jam_Lembur >= 5 THEN
+     Gaji_Lembur = 0.38 * Gaji_Pokok
+     END IF
+
+Total_Penghasilan = Gaji_Pokok + Gaji_Lembur
+Output Total_Penghasilan
+
+END
+
